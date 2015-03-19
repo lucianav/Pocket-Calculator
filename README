@@ -1,0 +1,22 @@
+Luciana Elena Viziru - 322CA
+
+Readme Tema 4 POO - Pocket Calculator
+
+Pentru evaluarea expresiilor am construit un arbore de parsare care apoi a fost
+evaluat cu ajutorul patternului Visitor. Pentru constructia arborelui am folo-
+sit algoritmul de conversie a unei expresii din forma infixata in forma postfi-
+xata, cu modificarea ca pentru aplicarea unui operator pe 2 operanzi am setat
+cei doi operanzi ca fii ai nodului operator si am scos operatorul din stiva de
+operatori, introducandu-l in stiva de operanzi. In final, se scot toti operato-
+rii din stiva. Daca in stiva operatorilor raman paranteze, sintaxa expresiei
+este gresita. In final, cand stiva operatorilor este goala, in stiva operanzilor
+se gaseste radacina arborelui. In constructia arborelui, nodurile paranteza
+dreapta nu se introduc in stiva, iar cele paranteza stanga se introduc si se scot
+la intalnirea parantezei drepte care le inchid.
+
+Erorile sintactice se trateaza la parsarea expresiei, cele de aplicare a functii-
+lor la evaluarea expresiei. Vizitatorul TreeEvalVisitor este aplicat recursiv pe
+fiecare nod al arborelui, calculand valoarea subarborelui sau.
+
+Am adaugat clasa Node cu subclasele Operator, Value si Parantheses, clasa 
+ParseTree, clasa TreeEvalVisitor si interfetele Visitor si Visitable.
