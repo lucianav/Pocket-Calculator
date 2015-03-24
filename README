@@ -1,7 +1,3 @@
-Luciana Elena Viziru - 322CA
-
-Readme Tema 4 POO - Pocket Calculator
-
 Pentru evaluarea expresiilor am construit un arbore de parsare care apoi a fost
 evaluat cu ajutorul patternului Visitor. Pentru constructia arborelui am folo-
 sit algoritmul de conversie a unei expresii din forma infixata in forma postfi-
